@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Chiken",
+    "description": "Lorem ipsum dolor sit amet consectetur aipisicing elit. Sequi laudantium nostrum dolor.",
+    "price": 549,
+
+    "thumbnail": "https://i.ibb.co/sj3zTr7/chiken.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Fajita",
+    "description": "Lorem ipsum dolor sit amet consectetur aipisicing elit. Sequi laudantium nostrum dolor.",
+    "price": 899,
+
+    "thumbnail": "https://i.ibb.co/6RMbnTg/fajita.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Chiken Masala",
+    "description": "Lorem ipsum dolor sit amet consectetur aipisicing elit. Sequi laudantium nostrum dolor.",
+    "price": 1249,
+
+    "thumbnail": "https://i.ibb.co/fXSLQ4S/masala.jpg"
+  }
+]
