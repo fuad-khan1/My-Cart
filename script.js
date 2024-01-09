@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cartButton = document.getElementById("cart-icon");
   const cartSidebar = document.querySelector(".cart-section");
   const closeCartButton = document.getElementById("close-cart");
+  const addedItems = document.getElementById('cart-count')
   const cart = [];
 
 
@@ -30,6 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateCartIcon() {
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     cartButton.innerHTML = `<sup class="bg-red-500 text-white p-1 rounded text-xs">${cartCount}</sup>`;
+    const cartCountElement = document.getElementById("cart-count");
+  if (cartCountElement) {
+    cartCountElement.innerHTML = `${cartCount} ${cartCount >= 2 ? 'items' : 'item'}`;
+  }
   }
 
   window.addToOrder = function addToOrder(itemName, price, image, buttonId, productId) {
