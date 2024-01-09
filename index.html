@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>My Cart</title>
+  </head>
+  <body>
+
+     <!-- ------- Nav section start --------------------- -->
+    <nav class="bg-red-50 p-3">
+      <div class="container mx-auto flex justify-around items-center">
+        <div class="flex space-x-3">
+          <a href="#"> Logo</a>
+          <a href="#" class="">MENU</a>
+          <a href="#" class="">REWARDS</a>
+          <a href="#" class="">LOCATIONS</a>
+          <a href="#" class="">GIFT CARDS</a>
+          <a href="#" class="">LOG IN</a>
+        </div>
+        <div>
+          <i
+            id="cart-icon"
+            class="fa-solid fa-bag-shopping text-2xl cursor-pointer"
+            ><sup class="bg-red-500 text-white p-1 rounded text-xs">0</sup></i
+          >
+
+          <button
+            class="text-white bg-red-500 py-2 px-4 rounded text-sm font-semibold"
+          >
+            Order now
+          </button>
+        </div>
+      </div>
+    </nav>
+     <!-- ------- Nav section end --------------------- -->
+
+
+     <!-- ------- Card section start --------------------- -->
+
+     <section class="container mx-auto py-6 flex justify-center items-center space-x-3 ">
+        <div id="card" class="p-3 max-w-xs rounded bg-gray-100">
+            <img src="./assets/chiken.jpg" class="w-full" alt="">
+            <h1 id="item-title" class="font-bold text-xl pt-3">Chicken</h1>
+            <p id="item-price" class="text-gray-700">$40</p>
+            <p id="item-description" class="text-gray-600 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, porro.</p>
+            <button id="add-to-order" class="w-full text-white bg-red-500 py-2 px-4 rounded text-sm font-semibold mb-2">Add to order</button>
+            <button class="w-full text-red-400 py-2 px-4 rounded text-sm font-semibold border border-2 border-red-400">Customize</button>
+        </div>
+        <div id="card" class="p-3 max-w-xs rounded bg-gray-100">
+            <img src="./assets/fajita.jpg" class="w-full" alt="">
+            <h1 id="item-title" class="font-bold text-xl pt-3">Fajita</h1>
+            <p id="item-price" class="text-gray-700">$38</p>
+            <p id="item-description" class="text-gray-600 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, porro.</p>
+            <button id="add-to-order" class="w-full text-white bg-red-500 py-2 px-4 rounded text-sm font-semibold mb-2">Add to order</button>
+            <button class="w-full text-red-400 py-2 px-4 rounded text-sm font-semibold border border-2 border-red-400">Customize</button>
+        </div>
+        <div id="card" class="p-3 max-w-xs rounded bg-gray-100">
+            <img src="./assets/masala.jpg" class="w-full" alt="">
+            <h1 id="item-title" class="font-bold text-xl pt-3">Chicken Masala</h1>
+            <p id="item-price" class="text-gray-700">$50</p>
+            <p id="item-description" class="text-gray-600 py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, porro.</p>
+            <button id="add-to-order" class="w-full text-white bg-red-500 py-2 px-4 rounded text-sm font-semibold mb-2">Add to order</button>
+            <button class="w-full text-red-400 py-2 px-4 rounded text-sm font-semibold border border-2 border-red-400">Customize</button>
+        </div>
+     </section>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

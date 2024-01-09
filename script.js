@@ -1,0 +1,1 @@
+const addToOrder = document.getElementById('add-to-order')
